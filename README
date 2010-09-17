@@ -1,0 +1,5 @@
+This repository contains various bits and pieces related to Fedora Commons repository implementation.
+
+Everything in the oai_objects and content_model_objects are ©2010 Glasgow Caledonian University, and are licensed under the GNU Lesser General Public Licence v3: http://www.gnu.org/licenses/lgpl.html .
+
+Everything in the collection_objects folder © 2007-2010 Glasgow Caledonian University. All rights reserved.
