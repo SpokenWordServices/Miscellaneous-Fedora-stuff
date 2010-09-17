@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<foxml:digitalObject VERSION="1.1" PID="swsman00:MetadataSDef"
+xmlns:foxml="info:fedora/fedora-system:def/foxml#"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/definitions/1/0/foxml1-1.xsd">
+<foxml:objectProperties>
+<foxml:property NAME="info:fedora/fedora-system:def/model#state" VALUE="Active"/>
+<foxml:property NAME="info:fedora/fedora-system:def/model#label" VALUE="Definition of the Metadata group of services"/>
+<foxml:property NAME="info:fedora/fedora-system:def/model#ownerId" VALUE="fedoraAdmin"/>
+<foxml:property NAME="info:fedora/fedora-system:def/model#createdDate" VALUE="2009-07-13T10:36:26.241Z"/>
+<foxml:property NAME="info:fedora/fedora-system:def/view#lastModifiedDate" VALUE="2010-08-31T13:24:19.603Z"/>
+</foxml:objectProperties>
+<foxml:datastream ID="AUDIT" STATE="A" CONTROL_GROUP="X" VERSIONABLE="false">
+<foxml:datastreamVersion ID="AUDIT.0" LABEL="Audit Trail for this object" CREATED="2009-07-13T10:36:26.241Z" MIMETYPE="text/xml" FORMAT_URI="info:fedora/fedora-system:format/xml.fedora.audit">
+<foxml:xmlContent>
+<audit:auditTrail xmlns:audit="info:fedora/fedora-system:def/audit#">
+<audit:record ID="AUDREC1">
+<audit:process type="Fedora API-M"/>
+<audit:action>ingest</audit:action>
+<audit:componentID></audit:componentID>
+<audit:responsibility>fedoraAdmin</audit:responsibility>
+<audit:date>2009-07-13T10:36:26.241Z</audit:date>
+<audit:justification>Created with Admin GUI &quot;New Object&quot; command</audit:justification>
+</audit:record>
+<audit:record ID="AUDREC2">
+<audit:process type="Fedora API-M"/>
+<audit:action>modifyDatastreamByValue</audit:action>
+<audit:componentID>METHODMAP</audit:componentID>
+<audit:responsibility>fedoraAdmin</audit:responsibility>
+<audit:date>2009-07-13T10:52:06.126Z</audit:date>
+<audit:justification>Defining getMetadata function</audit:justification>
+</audit:record>
+<audit:record ID="AUDREC3">
+<audit:process type="Fedora API-M"/>
+<audit:action>modifyDatastreamByValue</audit:action>
+<audit:componentID>METHODMAP</audit:componentID>
+<audit:responsibility>fedoraAdmin</audit:responsibility>
+<audit:date>2009-07-22T14:36:20.336Z</audit:date>
+<audit:justification>Makin oai_dc default</audit:justification>
+</audit:record>
+<audit:record ID="AUDREC4">
+<audit:process type="Fedora API-M"/>
+<audit:action>modifyDatastreamByValue</audit:action>
+<audit:componentID>METHODMAP</audit:componentID>
+<audit:responsibility>fedoraAdmin</audit:responsibility>
+<audit:date>2009-07-22T15:49:15.288Z</audit:date>
+<audit:justification></audit:justification>
+</audit:record>
+<audit:record ID="AUDREC5">
+<audit:process type="Fedora API-M"/>
+<audit:action>modifyDatastreamByValue</audit:action>
+<audit:componentID>METHODMAP</audit:componentID>
+<audit:responsibility>fedoraAdmin</audit:responsibility>
+<audit:date>2009-07-23T15:13:07.957Z</audit:date>
+<audit:justification>tracking bug</audit:justification>
+</audit:record>
+<audit:record ID="AUDREC6">
+<audit:process type="Fedora API-M"/>
+<audit:action>ingest</audit:action>
+<audit:componentID></audit:componentID>
+<audit:responsibility>fedoraAdmin</audit:responsibility>
+<audit:date>2009-07-27T15:52:17.167Z</audit:date>
+<audit:justification>Ingested from local file C:\fedora\home\client\swsman00_MetadataSDef.xml</audit:justification>
+</audit:record>
+<audit:record ID="AUDREC7">
+<audit:process type="Fedora API-M"/>
+<audit:action>modifyDatastreamByValue</audit:action>
+<audit:componentID>METHODMAP</audit:componentID>
+<audit:responsibility>fedoraAdmin</audit:responsibility>
+<audit:date>2009-07-29T10:38:47.793Z</audit:date>
+<audit:justification>set default value of format</audit:justification>
+</audit:record>
+</audit:auditTrail>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+</foxml:datastream>
+<foxml:datastream ID="RELS-EXT" STATE="A" CONTROL_GROUP="X" VERSIONABLE="true">
+<foxml:datastreamVersion ID="RELS-EXT1.0" LABEL="RDF Statements about this object" CREATED="2009-07-13T10:36:26.287Z" MIMETYPE="application/rdf+xml" FORMAT_URI="info:fedora/fedora-system:FedoraRELSExt-1.0" SIZE="370">
+<foxml:xmlContent>
+<rdf:RDF xmlns:fedora-model="info:fedora/fedora-system:def/model#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+          <rdf:Description rdf:about="info:fedora/swsman00:MetadataSDef">
+            <fedora-model:hasModel rdf:resource="info:fedora/fedora-system:ServiceDefinition-3.0"></fedora-model:hasModel>
+          </rdf:Description>
+        </rdf:RDF>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+</foxml:datastream>
+<foxml:datastream ID="METHODMAP" STATE="A" CONTROL_GROUP="X" VERSIONABLE="true">
+<foxml:datastreamVersion ID="METHODMAP1.0" LABEL="Abstract Method Map" CREATED="2009-07-13T10:36:26.287Z" MIMETYPE="text/xml" FORMAT_URI="info:fedora/fedora-system:FedoraSDefMethodMap-1.0" SIZE="1005">
+<foxml:xmlContent>
+<fmm:MethodMap xmlns:fmm="http://fedora.comm.nsdlib.org/service/methodmap" name="Fedora MethodMap for SDef">
+          <comment xmlns="info:fedora/fedora-system:def/comment#">
+            This METHODMAP datastream is included as a starting point to
+              assist in the creation of a service definition. The METHODMAP
+              should define the methods and method parameters for this
+              service definition.
+            For more information about service definitions, see:
+              http://fedora-commons.org/confluence/x/dgBI.
+            For examples of completed service definition objects, see the demonstration
+              objects included with your Fedora distribution, such as:
+              demo:1, demo:12, demo: 19, and demo:27.
+            For more information about the demonstration objects, see:
+              http://fedora-commons.org/confluence/x/AwFI.
+          </comment>
+          <fmm:Method operationName="changeme"></fmm:Method>
+        </fmm:MethodMap>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+<foxml:datastreamVersion ID="METHODMAP.1" LABEL="Abstract Method Map" CREATED="2009-07-13T10:52:06.126Z" MIMETYPE="text/xml" FORMAT_URI="info:fedora/fedora-system:FedoraSDefMethodMap-1.0" SIZE="1476">
+<foxml:xmlContent>
+<fmm:MethodMap xmlns:fmm="http://fedora.comm.nsdlib.org/service/methodmap" name="Fedora MethodMap for SDef">
+          <comment xmlns="info:fedora/fedora-system:def/comment#">
+            This METHODMAP datastream is included as a starting point to
+              assist in the creation of a service definition. The METHODMAP
+              should define the methods and method parameters for this
+              service definition.
+            For more information about service definitions, see:
+              http://fedora-commons.org/confluence/x/dgBI.
+            For examples of completed service definition objects, see the demonstration
+              objects included with your Fedora distribution, such as:
+              demo:1, demo:12, demo: 19, and demo:27.
+            For more information about the demonstration objects, see:
+              http://fedora-commons.org/confluence/x/AwFI.
+          </comment>
+          <fmm:Method label="Get metadata in the requested format" operationName="getMetadata">
+            <fmm:UserInputParm defaultValue="dc" label="Metadata Format" parmName="format" passBy="VALUE" required="true">
+              <fmm:ValidParmValues>
+                <fmm:ValidParm value="dc"></fmm:ValidParm>
+                <fmm:ValidParm value="oai_dc"></fmm:ValidParm>
+                <fmm:ValidParm value="mods"></fmm:ValidParm>
+              </fmm:ValidParmValues>
+            </fmm:UserInputParm>
+          </fmm:Method>
+        </fmm:MethodMap>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+<foxml:datastreamVersion ID="METHODMAP.2" LABEL="Abstract Method Map" CREATED="2009-07-22T14:36:20.336Z" MIMETYPE="text/xml" FORMAT_URI="info:fedora/fedora-system:FedoraSDefMethodMap-1.0" SIZE="1480">
+<foxml:xmlContent>
+<fmm:MethodMap xmlns:fmm="http://fedora.comm.nsdlib.org/service/methodmap" name="Fedora MethodMap for SDef">
+          <comment xmlns="info:fedora/fedora-system:def/comment#">
+            This METHODMAP datastream is included as a starting point to
+              assist in the creation of a service definition. The METHODMAP
+              should define the methods and method parameters for this
+              service definition.
+            For more information about service definitions, see:
+              http://fedora-commons.org/confluence/x/dgBI.
+            For examples of completed service definition objects, see the demonstration
+              objects included with your Fedora distribution, such as:
+              demo:1, demo:12, demo: 19, and demo:27.
+            For more information about the demonstration objects, see:
+              http://fedora-commons.org/confluence/x/AwFI.
+          </comment>
+          <fmm:Method label="Get metadata in the requested format" operationName="getMetadata">
+            <fmm:UserInputParm defaultValue="oai_dc" label="Metadata Format" parmName="format" passBy="VALUE" required="true">
+              <fmm:ValidParmValues>
+                <fmm:ValidParm value="dc"></fmm:ValidParm>
+                <fmm:ValidParm value="oai_dc"></fmm:ValidParm>
+                <fmm:ValidParm value="mods"></fmm:ValidParm>
+              </fmm:ValidParmValues>
+            </fmm:UserInputParm>
+          </fmm:Method>
+        </fmm:MethodMap>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+<foxml:datastreamVersion ID="METHODMAP.3" LABEL="Abstract Method Map" CREATED="2009-07-22T15:49:15.288Z" MIMETYPE="text/xml" FORMAT_URI="info:fedora/fedora-system:FedoraSDefMethodMap-1.0" SIZE="671">
+<foxml:xmlContent>
+<fmm:MethodMap xmlns:fmm="http://fedora.comm.nsdlib.org/service/methodmap" name="Fedora MethodMap for SDef">
+          <fmm:Method label="Get metadata in the requested format" operationName="getMetadata">
+            <fmm:UserInputParm defaultValue="oai_dc" label="Metadata Format" parmName="format" passBy="VALUE" required="true">
+              <fmm:ValidParmValues>
+                <fmm:ValidParm value="dc"></fmm:ValidParm>
+                <fmm:ValidParm value="oai_dc"></fmm:ValidParm>
+                <fmm:ValidParm value="mods"></fmm:ValidParm>
+              </fmm:ValidParmValues>
+            </fmm:UserInputParm>
+          </fmm:Method>
+        </fmm:MethodMap>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+<foxml:datastreamVersion ID="METHODMAP.4" LABEL="Abstract Method Map" CREATED="2009-07-23T15:13:07.957Z" MIMETYPE="text/xml" FORMAT_URI="info:fedora/fedora-system:FedoraSDefMethodMap-1.0" SIZE="563">
+<foxml:xmlContent>
+<fmm:MethodMap xmlns:fmm="http://fedora.comm.nsdlib.org/service/methodmap" name="MethodMap - Operations on objects">
+          <fmm:Method label="Get the metadata block in the specified format" operationName="getMetadata">
+            <fmm:UserInputParm defaultValue="" label="metadata format" parmName="format" passBy="VALUE" required="true">
+              <fmm:ValidParmValues>
+                <fmm:ValidParm value="oai_dc"></fmm:ValidParm>
+              </fmm:ValidParmValues>
+            </fmm:UserInputParm>
+          </fmm:Method>
+        </fmm:MethodMap>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+<foxml:datastreamVersion ID="METHODMAP.5" LABEL="Abstract Method Map" CREATED="2009-07-29T10:38:47.793Z" MIMETYPE="text/xml" FORMAT_URI="info:fedora/fedora-system:FedoraSDefMethodMap-1.0" SIZE="569">
+<foxml:xmlContent>
+<fmm:MethodMap xmlns:fmm="http://fedora.comm.nsdlib.org/service/methodmap" name="MethodMap - Operations on objects">
+          <fmm:Method label="Get the metadata block in the specified format" operationName="getMetadata">
+            <fmm:UserInputParm defaultValue="oai_dc" label="metadata format" parmName="format" passBy="VALUE" required="true">
+              <fmm:ValidParmValues>
+                <fmm:ValidParm value="oai_dc"></fmm:ValidParm>
+              </fmm:ValidParmValues>
+            </fmm:UserInputParm>
+          </fmm:Method>
+        </fmm:MethodMap>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+</foxml:datastream>
+<foxml:datastream ID="DC" STATE="A" CONTROL_GROUP="X" VERSIONABLE="true">
+<foxml:datastreamVersion ID="DC1.0" LABEL="Dublin Core Record for this object" CREATED="2009-07-13T10:36:26.241Z" MIMETYPE="text/xml" FORMAT_URI="http://www.openarchives.org/OAI/2.0/oai_dc/" SIZE="418">
+<foxml:xmlContent>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+  <dc:title>Definition of the Metadata group of services</dc:title>
+  <dc:identifier>swsman00:MetadataSDef</dc:identifier>
+</oai_dc:dc>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+</foxml:datastream>
+</foxml:digitalObject>

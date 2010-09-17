@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<foxml:digitalObject VERSION="1.1" PID="gcu:swaudio"
+xmlns:foxml="info:fedora/fedora-system:def/foxml#"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/definitions/1/0/foxml1-1.xsd">
+<foxml:objectProperties>
+<foxml:property NAME="info:fedora/fedora-system:def/model#state" VALUE="Active"/>
+<foxml:property NAME="info:fedora/fedora-system:def/model#label" VALUE="Content model for Spoken Word audio items"/>
+<foxml:property NAME="info:fedora/fedora-system:def/model#ownerId" VALUE=""/>
+<foxml:property NAME="info:fedora/fedora-system:def/model#createdDate" VALUE="2010-05-27T14:19:13.628Z"/>
+<foxml:property NAME="info:fedora/fedora-system:def/view#lastModifiedDate" VALUE="2010-08-27T15:29:45.411Z"/>
+</foxml:objectProperties>
+<foxml:datastream ID="AUDIT" STATE="A" CONTROL_GROUP="X" VERSIONABLE="false">
+<foxml:datastreamVersion ID="AUDIT.0" LABEL="Audit Trail for this object" CREATED="2010-05-27T14:19:13.628Z" MIMETYPE="text/xml" FORMAT_URI="info:fedora/fedora-system:format/xml.fedora.audit">
+<foxml:xmlContent>
+<audit:auditTrail xmlns:audit="info:fedora/fedora-system:def/audit#">
+<audit:record ID="AUDREC1">
+<audit:process type="Fedora API-M"/>
+<audit:action>addDatastream</audit:action>
+<audit:componentID>RELS-EXT</audit:componentID>
+<audit:responsibility>fedoraAdmin</audit:responsibility>
+<audit:date>2010-05-27T14:20:54.544Z</audit:date>
+<audit:justification></audit:justification>
+</audit:record>
+<audit:record ID="AUDREC2">
+<audit:process type="Fedora API-M"/>
+<audit:action>ingest</audit:action>
+<audit:componentID></audit:componentID>
+<audit:responsibility>fedoraAdmin</audit:responsibility>
+<audit:date>2010-08-27T15:29:45.411Z</audit:date>
+<audit:justification>Ingested from local file /home/swadmin/gcu_swaudio.xml</audit:justification>
+</audit:record>
+</audit:auditTrail>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+</foxml:datastream>
+<foxml:datastream ID="DC" STATE="A" CONTROL_GROUP="X" VERSIONABLE="true">
+<foxml:datastreamVersion ID="DC1.0" LABEL="Dublin Core Record for this object" CREATED="2010-05-27T14:19:13.628Z" MIMETYPE="text/xml" FORMAT_URI="http://www.openarchives.org/OAI/2.0/oai_dc/" SIZE="405">
+<foxml:xmlContent>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+  <dc:title>Content model for Spoken Word audio items</dc:title>
+  <dc:identifier>gcu:swaudio</dc:identifier>
+</oai_dc:dc>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+</foxml:datastream>
+<foxml:datastream ID="RELS-EXT" STATE="A" CONTROL_GROUP="X" VERSIONABLE="true">
+<foxml:datastreamVersion ID="RELS-EXT.0" LABEL="RDF Statements about this object" CREATED="2010-05-27T14:20:54.544Z" MIMETYPE="text/xml" FORMAT_URI="info:fedora/fedora-system:FedoraRELSExt-1.0" SIZE="284">
+<foxml:xmlContent>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="info:fedora/gcu:swaudio">
+    <hasModel xmlns="info:fedora/fedora-system:def/model#" rdf:resource="info:fedora/fedora-system:ContentModel-3.0"></hasModel>
+  </rdf:Description>
+</rdf:RDF>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+</foxml:datastream>
+<foxml:datastream ID="DS-COMPOSITE-MODEL" STATE="A" CONTROL_GROUP="X" VERSIONABLE="false">
+<foxml:datastreamVersion ID="DS-COMPOSITE-MODEL.9" LABEL="Spoken Word Audio Content Model" CREATED="2010-08-25T15:13:53.419Z" MIMETYPE="text/xml" FORMAT_URI="info:fedora/fedora-system:FedoraDSCompositeModel-1.0" SIZE="3058">
+<foxml:xmlContent>
+<dsCompositeModel xmlns="info:fedora/fedora-system:def/dsCompositeModel#" xmlns:dc="http://purl.org/dc/terms/">
+  <dsTypeModel ID="DC">
+    <form MIME="text/xml"></form>
+    <dc:title>Dublin Core</dc:title>
+  </dsTypeModel>
+  <dsTypeModel ID="RELS-EXT">
+    <form FORMAT_URI="info:fedora/fedora-system:FedoraRELSExt-1.0" MIME="application/rdf+xml"></form>
+    <dc:title>External Relationships RDF</dc:title>
+  </dsTypeModel>
+  <dsTypeModel ID="descMetadata">
+    <form MIME="text/xml"></form>
+    <dc:title>Descriptive metadata</dc:title>
+  </dsTypeModel>
+  <dsTypeModel ID="rightsMetadata">
+    <form MIME="text/xml"></form>
+    <dc:title>Rights metadata</dc:title>
+  </dsTypeModel>
+  <dsTypeModel ID="contentMetadata" optional="true">
+    <form MIME="text/xml"></form>
+    <dc:title>Content metadata (structure, display properties)</dc:title>
+  </dsTypeModel>
+  <dsTypeModel ID="technicalMetadata" optional="true">
+    <form MIME="text/xml"></form>
+    <dc:title>Technical metadata</dc:title>
+  </dsTypeModel>
+  <dsTypeModel ID="Essence" optional="true">
+    <form MIME="video/MP2P"></form>
+    <form MIME="video/MP2T"></form>
+    <form MIME="video/mp4"></form>
+    <form MIME="application/mp4"></form>
+    <form MIME="audio/mp4"></form>
+    <form MIME="audio/vnd.wave"></form>
+    <form MIME="audio/wav"></form>
+    <form MIME="audio/wave"></form>
+    <form MIME="audio/x-wav"></form>
+    <form MIME="audio/x-aiff"></form>
+	<form MIME="audio/aiff"></form>
+	<form MIME="audio/aiff"></form>
+	<form MIME="audio/x-flac"></form>
+	<form MIME="audio/x-ms-wma"></form>
+	<form MIME="video/x-matroska"></form>
+	<form MIME="audio/x-matroska"></form>
+	<form MIME="audio/mpeg"></form>
+    <dc:title>Preservation-level Audio Asset (Original, verbatim from source)</dc:title>
+  </dsTypeModel>
+  <dsTypeModel ID="Master" optional="true">
+    <form MIME="video/MP2P"></form>
+    <form MIME="video/MP2T"></form>
+    <form MIME="audio/vnd.wave"></form>
+    <form MIME="audio/wav"></form>
+    <form MIME="audio/wave"></form>
+    <form MIME="audio/x-wav"></form>
+    <form MIME="audio/x-aiff"></form>
+	<form MIME="audio/aiff"></form>
+    <dc:title>Preservation-level Audio Asset (User edit, original quality)</dc:title>
+  </dsTypeModel>
+  <dsTypeModel ID="Delivery">
+    <form MIME="video/mp4"></form>
+    <form MIME="application/mp4"></form>
+    <form MIME="audio/mp4"></form>
+    <form MIME="video/ogg"></form>
+    <form MIME="video/webm"></form>
+    <form MIME="audio/webm"></form>
+	<form MIME="audio/mpeg"></form>
+    <dc:title>Re-compressed Audio Asset (optimised for web delivery using lossy compression)</dc:title>
+  </dsTypeModel>
+  <dsTypeModel ID="Download" optional="true">
+    <form MIME="video/mp4"></form>
+    <form MIME="application/mp4"></form>
+    <form MIME="audio/mp4"></form>
+    <form MIME="video/ogg"></form>
+    <form MIME="video/webm"></form>
+    <form MIME="audio/webm"></form>
+	<form MIME="audio/mpeg"></form>
+    <dc:title>Re-compressed Audio Asset (optimised for web delivery - legacy &apos;download&apos; version)</dc:title>
+  </dsTypeModel>
+</dsCompositeModel>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+</foxml:datastream>
+</foxml:digitalObject>

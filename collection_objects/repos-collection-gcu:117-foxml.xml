@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<foxml:digitalObject VERSION="1.1" PID="gcu:117"
+	xmlns:foxml="info:fedora/fedora-system:def/foxml#"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/definitions/1/0/foxml1-1.xsd">
+	<foxml:objectProperties>
+	<foxml:property NAME="info:fedora/fedora-system:def/model#state" VALUE="Active"/>
+	<foxml:property NAME="info:fedora/fedora-system:def/model#label" VALUE="BBC Learning English"/>
+	</foxml:objectProperties>
+	<foxml:datastream ID="DC" STATE="A" CONTROL_GROUP="X" VERSIONABLE="true">
+	<foxml:datastreamVersion ID="DC1.0" LABEL="Dublin Core Record for this object" MIMETYPE="text/xml" FORMAT_URI="http://www.openarchives.org/OAI/2.0/oai_dc/">
+	<foxml:xmlContent>
+	<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+	  <dc:title>BBC Learning English</dc:title>
+	  <dc:identifier>gcu:117</dc:identifier>
+	</oai_dc:dc>
+	</foxml:xmlContent>
+	</foxml:datastreamVersion>
+	</foxml:datastream>
+	<foxml:datastream ID="RELS-EXT" STATE="A" CONTROL_GROUP="X" VERSIONABLE="true">
+	<foxml:datastreamVersion ID="RELS-EXT.0" LABEL="RDF Statements about this object" MIMETYPE="text/xml" FORMAT_URI="info:fedora/fedora-system:FedoraRELSExt-1.0">
+	<foxml:xmlContent>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rel="info:fedora/fedora-system:def/relations-external#">
+	  <rdf:Description rdf:about="info:fedora/gcu:117">
+	    <rel:isCollection>true</rel:isCollection>
+		<oai:setSpec xmlns:oai="http://www.openarchives.org/OAI/2.0/">gcu:117</oai:setSpec>
+		<oai:setName xmlns:oai="http://www.openarchives.org/OAI/2.0/">BBC Learning English</oai:setName>
+	  </rdf:Description>
+	</rdf:RDF>
+	</foxml:xmlContent>
+	</foxml:datastreamVersion>
+	</foxml:datastream>
+	</foxml:digitalObject>
