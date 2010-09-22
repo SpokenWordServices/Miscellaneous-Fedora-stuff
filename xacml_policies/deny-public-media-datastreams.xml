@@ -5,44 +5,19 @@
 	<Subjects>
 		<AnySubject/>
 	</Subjects>
-	<Resources>
-	  <Resource>
-		<ResourceMatch
-		  MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
-		  <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">MASTER</AttributeValue>
-		  <ResourceAttributeDesignator
-			AttributeId="urn:fedora:names:fedora:2.1:resource:*datastream:id*"
-			DataType="http://www.w3.org/2001/XMLSchema#string"/>
-		</ResourceMatch>
-	  </Resource>
-	  <Resource>
-		<ResourceMatch
-		  MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
-		  <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">ARCHIVAL</AttributeValue>
-		  <ResourceAttributeDesignator
-			AttributeId="urn:fedora:names:fedora:2.1:resource:*datastream:id*"
-			DataType="http://www.w3.org/2001/XMLSchema#string"/>
-		</ResourceMatch>
-	  </Resource>
-	  <Resource>
-		<ResourceMatch
-		  MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
-		  <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">DELIVERY</AttributeValue>
-		  <ResourceAttributeDesignator
-			AttributeId="urn:fedora:names:fedora:2.1:resource:*datastream:id*"
-			DataType="http://www.w3.org/2001/XMLSchema#string"/>
-		</ResourceMatch>
-	  </Resource>
-	  <Resource>
-		<ResourceMatch
-		  MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
-		  <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">DOWNLOAD</AttributeValue>
-		  <ResourceAttributeDesignator
-			AttributeId="urn:fedora:names:fedora:2.1:resource:*datastream:id*"
-			DataType="http://www.w3.org/2001/XMLSchema#string"/>
-		</ResourceMatch>
-	  </Resource>
-	</Resources>
+
+		<Resources>
+			<Resource>
+				<ResourceMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+					<AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">gcu:a0a7x7</AttributeValue>
+					<ResourceAttributeDesignator AttributeId="urn:fedora:names:fedora:2.1:resource:object:pid" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+				</ResourceMatch>
+				<ResourceMatch MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+					<AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">DELIVERY</AttributeValue>
+					<ResourceAttributeDesignator AttributeId="urn:fedora:names:fedora:2.1:resource:datastream:id" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+				</ResourceMatch>
+			</Resource>
+		</Resources>
 	<Actions>
 		<AnyAction/>
 	</Actions>
