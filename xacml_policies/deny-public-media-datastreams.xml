@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Policy PolicyId="deny-public-media-datastreams"
-		RuleCombiningAlgId="urn:oasis:names:tc:xacml:1.0:rule-combining-algorithm:first-applicable"
-		xmlns="urn:oasis:names:tc:xacml:1.0:policy"
-		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-
+<Policy PolicyId="deny-public-media-datastreams" RuleCombiningAlgId="urn:oasis:names:tc:xacml:1.0:rule-combining-algorithm:first-applicable" xmlns="urn:oasis:names:tc:xacml:1.0:policy" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Description>This policy will DENY access to MASTER, ARCHIVAL, DELIVERY and DOWNLOAD datastreams when the user is not a Fedora administrator (so will deny public access).</Description>
-
   <Target>
 	<Subjects>
 		<AnySubject/>
@@ -59,5 +54,5 @@
         <SubjectAttributeDesignator AttributeId="fedoraRole" DataType="http://www.w3.org/2001/XMLSchema#string"/>
       </Apply>
     </Condition>
-  </Rule
+  </Rule>
 </Policy>
