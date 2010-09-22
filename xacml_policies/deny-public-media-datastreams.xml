@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <Policy PolicyId="deny-public-media-datastreams"
 		RuleCombiningAlgId="urn:oasis:names:tc:xacml:1.0:rule-combining-algorithm:first-applicable"
 		xmlns="urn:oasis:names:tc:xacml:1.0:policy"
@@ -22,7 +23,7 @@
 	  <Resource>
 		<ResourceMatch
 		  MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
-		  <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">MASTER</AttributeValue>
+		  <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">ARCHIVAL</AttributeValue>
 		  <ResourceAttributeDesignator
 			AttributeId="urn:fedora:names:fedora:2.1:resource:*datastream:id*"
 			DataType="http://www.w3.org/2001/XMLSchema#string"/>
