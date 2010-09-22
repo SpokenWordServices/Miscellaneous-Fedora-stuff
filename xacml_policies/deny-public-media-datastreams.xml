@@ -1,0 +1,62 @@
+<Policy PolicyId="deny-public-media-datastreams"
+		RuleCombiningAlgId="urn:oasis:names:tc:xacml:1.0:rule-combining-algorithm:first-applicable"
+		xmlns="urn:oasis:names:tc:xacml:1.0:policy"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <Description>This policy will DENY access to MASTER, ARCHIVAL, DELIVERY and DOWNLOAD datastreams when the user is not a Fedora administrator (so will deny public access).</Description>
+
+  <Target>
+	<Subjects>
+		<AnySubject/>
+	</Subjects>
+	<Resources>
+	  <Resource>
+		<ResourceMatch
+		  MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+		  <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">MASTER</AttributeValue>
+		  <ResourceAttributeDesignator
+			AttributeId="urn:fedora:names:fedora:2.1:resource:*datastream:id*"
+			DataType="http://www.w3.org/2001/XMLSchema#string"/>
+		</ResourceMatch>
+	  </Resource>
+	  <Resource>
+		<ResourceMatch
+		  MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+		  <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">MASTER</AttributeValue>
+		  <ResourceAttributeDesignator
+			AttributeId="urn:fedora:names:fedora:2.1:resource:*datastream:id*"
+			DataType="http://www.w3.org/2001/XMLSchema#string"/>
+		</ResourceMatch>
+	  </Resource>
+	  <Resource>
+		<ResourceMatch
+		  MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+		  <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">DELIVERY</AttributeValue>
+		  <ResourceAttributeDesignator
+			AttributeId="urn:fedora:names:fedora:2.1:resource:*datastream:id*"
+			DataType="http://www.w3.org/2001/XMLSchema#string"/>
+		</ResourceMatch>
+	  </Resource>
+	  <Resource>
+		<ResourceMatch
+		  MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+		  <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">DOWNLOAD</AttributeValue>
+		  <ResourceAttributeDesignator
+			AttributeId="urn:fedora:names:fedora:2.1:resource:*datastream:id*"
+			DataType="http://www.w3.org/2001/XMLSchema#string"/>
+		</ResourceMatch>
+	  </Resource>
+	</Resources>
+	<Actions>
+		<AnyAction/>
+	</Actions>
+  </Target>
+	<Rule RuleId="1" Effect="Deny">
+    <Condition FunctionId="urn:oasis:names:tc:xacml:1.0:function:not">
+      <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-is-in">
+        <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">administrator</AttributeValue>
+        <SubjectAttributeDesignator AttributeId="fedoraRole" DataType="http://www.w3.org/2001/XMLSchema#string"/>
+      </Apply>
+    </Condition>
+  </Rule
+</Policy>
