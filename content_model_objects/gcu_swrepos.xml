@@ -31,8 +31,8 @@ xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/
 </foxml:xmlContent>
 </foxml:datastreamVersion>
 </foxml:datastream>
-<foxml:datastream ID="DS-COMPOSITE-MODEL" STATE="A" CONTROL_GROUP="X" VERSIONABLE="false">
-<foxml:datastreamVersion ID="DS-COMPOSITE-MODEL.9" LABEL="Content model for Spoken Word items migrated from REPOS legacy repository" CREATED="2010-09-23T09:46:53.419Z" MIMETYPE="text/xml" FORMAT_URI="info:fedora/fedora-system:FedoraDSCompositeModel-1.0" SIZE="517">
+<foxml:datastream ID="DS-COMPOSITE-MODEL" STATE="A" CONTROL_GROUP="X" VERSIONABLE="true">
+<foxml:datastreamVersion ID="DS-COMPOSITE-MODEL.0" LABEL="Content model for Spoken Word items migrated from REPOS legacy repository" CREATED="2010-09-23T09:46:53.419Z" MIMETYPE="text/xml" FORMAT_URI="info:fedora/fedora-system:FedoraDSCompositeModel-1.0" SIZE="517">
 <foxml:xmlContent>
 <dsCompositeModel xmlns="info:fedora/fedora-system:def/dsCompositeModel#" xmlns:dc="http://purl.org/dc/terms/">
   <dsTypeModel ID="DC">
