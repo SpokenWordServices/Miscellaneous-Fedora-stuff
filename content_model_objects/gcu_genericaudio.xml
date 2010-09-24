@@ -90,9 +90,6 @@ xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/
 	<form MIME="audio/aiff"></form>
     <dc:title>Preservation-level Audio Asset (User edit, original quality)</dc:title>
   </dsTypeModel>
-  <dsTypeModel ID="Delivery" optional="true">
-    <dc:title>Re-compressed Audio Asset (optimised for web delivery using lossy compression)</dc:title>
-  </dsTypeModel>
   <dsTypeModel ID="Download" optional="true">
     <form MIME="video/mp4"></form>
     <form MIME="application/mp4"></form>

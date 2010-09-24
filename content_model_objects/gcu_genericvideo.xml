@@ -84,9 +84,6 @@ xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/
 	<form MIME="audio/x-matroska"></form>
     <dc:title>Preservation-level Video Asset (User edit, original quality)</dc:title>
   </dsTypeModel>
-  <dsTypeModel ID="Delivery" optional="true">
-    <dc:title>Re-compressed Video Asset (optimised for web delivery using lossy compression)</dc:title>
-  </dsTypeModel>
 </dsCompositeModel>
 </foxml:xmlContent>
 </foxml:datastreamVersion>
