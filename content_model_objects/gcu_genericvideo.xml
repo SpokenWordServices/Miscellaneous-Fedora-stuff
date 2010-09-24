@@ -85,12 +85,6 @@ xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/
     <dc:title>Preservation-level Video Asset (User edit, original quality)</dc:title>
   </dsTypeModel>
   <dsTypeModel ID="Delivery" optional="true">
-    <form MIME="video/mp4"></form>
-    <form MIME="application/mp4"></form>
-    <form MIME="audio/mp4"></form>
-    <form MIME="video/ogg"></form>
-    <form MIME="video/webm"></form>
-    <form MIME="audio/webm"></form>
     <dc:title>Re-compressed Video Asset (optimised for web delivery using lossy compression)</dc:title>
   </dsTypeModel>
 </dsCompositeModel>
