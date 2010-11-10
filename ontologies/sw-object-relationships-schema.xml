@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF base="info:fedora/fedora-system:def/relations-external#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+	<rdf:Property rdf:ID="fedoraRelationship">
+		<rdfs:comment>The primitive property for all object-to-object relationships in the fedora ontology</rdfs:comment>
+	</rdf:Property>
+	<rdf:Property rdf:ID="isClipOf">
+		<rdfs:label xml:lang="en-US">Is Clip Of</rdfs:label>
+		<rdfs:comment xml:lang="en-US">A definition of the relationship between a timed media object and the timed media object from which it is derived, and wholly represented within.  The subject is a fedora object representing a part and the predicate is a fedora object representing a whole.</rdfs:comment>
+		<rdfs:subPropertyOf rdf:resource="#fedoraRelationship"/>
+	</rdf:Property>
+	<rdf:Property rdf:ID="hasClip">
+		<rdfs:label xml:lang="en-US">Has Clip</rdfs:label>
+		<rdfs:comment xml:lang="en-US">A definition of the relationship between a timed media object and a derivative timed media object, which is derived, and wholly represented within, the parent object. The subject is a fedora object representing a whole and the predicate is a fedora object representing a part.</rdfs:comment>
+		<rdfs:subPropertyOf rdf:resource="#fedoraRelationship"/>
+	</rdf:Property>
+</rdf:RDF>
