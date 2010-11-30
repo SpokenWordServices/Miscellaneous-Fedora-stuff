@@ -1,5 +1,5 @@
 This repository contains various bits and pieces related to Fedora Commons repository implementation.
 
-Everything in this repository - except from the contents of the 'collection_objects' directory - is ©2010 Glasgow Caledonian University, and licensed under the GNU Lesser General Public Licence v3: http://www.gnu.org/licenses/lgpl.html .
+Everything in this repository - except from the contents of the 'collection_objects' directory or where licences in the files state otherwise - is ©2010 Glasgow Caledonian University, and licensed under the GNU Lesser General Public Licence v3: http://www.gnu.org/licenses/lgpl.html .
 
 Everything in the collection_objects directory is © 2007-2010 Glasgow Caledonian University. All rights reserved.
