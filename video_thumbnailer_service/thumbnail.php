@@ -3,9 +3,12 @@
 /*
 thumbnail.php
 
-A proof of concept video thumbnailer web service, akin to the ImageManip service shipped with Fedora Commons. Very rough code so YMMV - if it fills your server with random videos, eats your cat, or forces a rift in the space-time continuum, don't come running to me.
+A proof of concept video thumbnailer web service, akin to the ImageManip service shipped 
+with Fedora Commons. Very rough code so YMMV - if it fills your server with random videos, 
+eats your cat, or forces a rift in the space-time continuum, don't come running to me.
 
-Warning: uses a shell command and the 'exec()' function to invoke ffmpegthumbnailer. This might be a bad idea.
+Warning: uses a shell command and the 'exec()' function to invoke ffmpegthumbnailer. This 
+might be a bad idea.
 
 
 Created by Graeme West on 2010-11-30.
