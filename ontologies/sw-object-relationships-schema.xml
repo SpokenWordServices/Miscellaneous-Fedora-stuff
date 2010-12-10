@@ -21,34 +21,34 @@
 /isPartOf"/>
 	</rdf:Property>
 	<rdf:Property rdf:ID="hasEpisode">
-		<rdfs:label xml:lang="en-US">Has Clip</rdfs:label>
+		<rdfs:label xml:lang="en-US">Has Episode</rdfs:label>
 		<rdfs:comment xml:lang="en-US">A definition of the relationship between a series, brand, collection or other aggregate and a derivative timed media object. The subject is a fedora object representing a series, brand, collection or other aggregate and the predicate is a fedora object representing an episode of this subject.</rdfs:comment>
 		<rdfs:subPropertyOf rdf:resource="info:fedora/fedora-system:def/relations-external
 /hasPart"/>
 	</rdf:Property>
 
 	<rdf:Property rdf:ID="hasBrand">
-		<rdfs:label xml:lang="en-US">Is Clip Of</rdfs:label>
-		<rdfs:comment xml:lang="en-US">A definition of the relationship between a timed media object or series and the brand, and wholly represented within.  The subject is a fedora object representing a part and the predicate is a fedora object representing a whole.</rdfs:comment>
+		<rdfs:label xml:lang="en-US">Has Brand</rdfs:label>
+		<rdfs:comment xml:lang="en-US">A definition of the relationship between a timed media object or series and an associated brand. The subject is a fedora object representing a timed media object or series and the predicate is a fedora object representing a brand.</rdfs:comment>
 		<rdfs:subPropertyOf rdf:resource="info:fedora/fedora-system:def/relations-external
 /isPartOf"/>
 	</rdf:Property>
 	<rdf:Property rdf:ID="isBrandOf">
-		<rdfs:label xml:lang="en-US">Has Clip</rdfs:label>
-		<rdfs:comment xml:lang="en-US">A definition of the relationship between a timed media object and a derivative timed media object, which is derived, and wholly represented within, the parent object. The subject is a fedora object representing a whole and the predicate is a fedora object representing a part.</rdfs:comment>
+		<rdfs:label xml:lang="en-US">Is Brand Of</rdfs:label>
+		<rdfs:comment xml:lang="en-US">A definition of the relationship between a brand and a timed media object or series. The subject is a fedora object representing a brand and the predicate is a fedora object representing a timed media object or series.</rdfs:comment>
 		<rdfs:subPropertyOf rdf:resource="info:fedora/fedora-system:def/relations-external
 /hasPart"/>
 	</rdf:Property>
 
 	<rdf:Property rdf:ID="hasVersion">
-		<rdfs:label xml:lang="en-US">Is Clip Of</rdfs:label>
-		<rdfs:comment xml:lang="en-US">A definition of the relationship between a timed media object and the timed media object from which it is derived, and wholly represented within.  The subject is a fedora object representing a part and the predicate is a fedora object representing a whole.</rdfs:comment>
+		<rdfs:label xml:lang="en-US">Has Version</rdfs:label>
+		<rdfs:comment xml:lang="en-US">A definition of the relationship between a timed media object and the timed media object from which it is derived, and wholly represented within.  The subject is a fedora object representing a derivative version and the predicate is a fedora object representing the original.</rdfs:comment>
 		<rdfs:subPropertyOf rdf:resource="info:fedora/fedora-system:def/relations-external
 /isDerivationOf"/>
 	</rdf:Property>
 	<rdf:Property rdf:ID="isVersionOf">
-		<rdfs:label xml:lang="en-US">Has Clip</rdfs:label>
-		<rdfs:comment xml:lang="en-US">A definition of the relationship between a timed media object and a derivative timed media object, which is derived, and wholly represented within, the parent object. The subject is a fedora object representing a whole and the predicate is a fedora object representing a part.</rdfs:comment>
+		<rdfs:label xml:lang="en-US">Is Version Of</rdfs:label>
+		<rdfs:comment xml:lang="en-US">A definition of the relationship between a timed media object and a derivative timed media object, which is derived, and wholly represented within, the parent object. The subject is a fedora object representing the original and the predicate is a fedora object representing a derivative version.</rdfs:comment>
 		<rdfs:subPropertyOf rdf:resource="info:fedora/fedora-system:def/relations-external
 /hasDerivation"/>
 	</rdf:Property>
